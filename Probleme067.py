@@ -5,7 +5,7 @@ Created on Mon Aug 22 16:36:03 2016
 @author: timothee.boulet
 """
 
-text_file = open('Probleme67_triangle.txt', "r")
+text_file = open('Probleme067_triangle.txt', "r")
 lines = text_file.read().split('\n')
 text_file.close()
 
