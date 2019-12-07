@@ -21,7 +21,7 @@ def check_set(liste, n=7):
                 comb.append(somme)
     return True
     
-with open("C:\\ProjectEuler\\Probleme105_sets.txt", 'rb') as f:
+with open("Probleme105_sets.txt", 'rb') as f:
     sets = f.read().split('\n')
 
 sets = [[int(n) for n in s.split(',')] for s in sets]
