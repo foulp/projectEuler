@@ -22,7 +22,7 @@ def areAnagrams(w1, w2):
             t2.remove(letter)
     return True
 
-f=open('C:\\Users\\timothee.boulet\\Desktop\\ProjectEuler\\Probleme98_words.txt', 'r')
+f=open('Probleme098_words.txt', 'r')
 words=[word[1:-1] for word in f.read().split(',')]
 f.close()
 
