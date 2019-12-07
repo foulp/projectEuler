@@ -33,7 +33,7 @@ def minimal(roman):
 
 
 
-f=open('C:\\Users\\timothee.boulet\\Desktop\\ProjectEuler\\Probleme89_roman.txt')
+f=open('Probleme089_roman.txt')
 romans=f.read().split('\n')
 f.close()
 
