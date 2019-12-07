@@ -5,7 +5,7 @@ Created on Thu Aug 25 16:06:00 2016
 @author: timothee.boulet
 """
 
-f=open('C:\\Users\\timothee.boulet\\Desktop\\ProjectEuler\\Probleme79_keylog.txt')
+f=open('Probleme079_keylog.txt')
 lines=list(set(f.read().split('\n')[:-1]))
 f.close()
 
