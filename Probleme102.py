@@ -4,7 +4,7 @@ Created on Sun Jan 01 14:06:03 2017
 
 @author: SansAccent
 """
-with open("C:\\ProjectEuler\\Probleme102_triangles.txt") as fichier :
+with open("Probleme102_triangles.txt") as fichier :
     triangles = fichier.read().split('\n')[:-1]
 
 
