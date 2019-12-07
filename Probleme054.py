@@ -125,7 +125,7 @@ def handWinner(main):
             i+=1
     
     
-f = open('C:\\Users\\timothee.boulet\\Desktop\\ProjectEuler\\Probleme54_mains.txt', "r")
+f = open('Probleme054_mains.txt', "r")
 hands=[]
 for line in f:
     line=line[:-1]
