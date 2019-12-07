@@ -10,7 +10,7 @@ alphabet = [chr(letter) for letter in range(ord('A'), ord('Z')+1)]
 lower = list(range(97,123)) #a à z
 lower = [bin(letter)[2:] for letter in lower]
 
-f = open('C:\\Users\\timothee.boulet\\Desktop\\ProjectEuler\\Probleme59_cipher.txt', "r")
+f = open('Probleme059_cipher.txt', "r")
 
 text=f.read().split(',')
 text=[bin(int(letter))[2:] for letter in text]
