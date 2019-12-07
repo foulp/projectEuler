@@ -6,7 +6,7 @@ Created on Wed Aug 24 11:54:30 2016
 """
 import numpy as np
 
-f=open("C:\\Users\\timothee.boulet\\Desktop\\ProjectEuler\\Probleme83_matrix.txt",'r')
+f=open("Probleme083_matrix.txt",'r')
 matrix=f.read().split('\n')[:-1]
 f.close()
 
