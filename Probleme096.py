@@ -132,7 +132,7 @@ def removeValue(possibles, idx, val):
     return result
      
         
-with open('C:\\ProjectEuler\\Probleme96_sudoku.txt') as file:
+with open('Probleme096_sudoku.txt') as file:
     sudos = file.read()
     sudos = re.sub(r'\n','', sudos)
     sudos = re.split(r'Grid [0-9]{2}', sudos)[1:]
