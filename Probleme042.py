@@ -7,7 +7,7 @@ Created on Thu Jul 28 11:46:37 2016
 import string
 dico = dict(zip(string.ascii_uppercase, range(1,27)))
 
-text_file = open('Probleme42_words.txt', "r")
+text_file = open('Probleme042_words.txt', "r")
 lines = text_file.read().split(',')
 text_file.close()
 
