@@ -6,7 +6,7 @@ Created on Thu Sep 01 14:32:06 2016
 """
 from math import log
 
-f=open("C:\\Users\\timothee.boulet\\Desktop\\ProjectEuler\\Probleme99_base_exp.txt")
+f=open("Probleme099_base_exp.txt")
 lines=f.read().split('\n')
 exp = [[int(line.split(',')[0]),int(line.split(',')[1])] for line in lines]
 
