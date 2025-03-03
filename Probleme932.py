@@ -1,16 +1,23 @@
-from numpy.polynomial import Polynomial
-import numpy as np
-
 s = []
-N = 12
+N = 16
 for b in range(1, 10**(N//2)):
-    if b % 10**7 == 0:
-        print(b)
-    l = 10 ** (1 + int(np.log10(b)))
-    p = Polynomial([b*(b-1), 2*b - l, 1])
-    roots = p.roots()
-    roots_ = [(int(a), b, int(a*l+b)) for a in roots if type(a) == np.float64 and int(a) == a and a > 0]
-    s.extend(roots_)
+    n = len(str(b))
+    delta = 10 ** (2*n) - 4*b*(10**n - 1)
+    if delta >= 0:
+        sq_delta = delta ** 0.5
+        if int(sq_delta) != sq_delta:
+            continue
+        sq_delta = int(sq_delta)
+        aa = 10**n // 2 - b
+        if delta == 0 and aa > 0:
+            print(aa * 10**n + b)
+            s.append(aa * 10**n + b)
+        elif delta > 0 and sq_delta % 2 == 0:
+            aa1 = aa - sq_delta // 2
+            if aa1 > 0:
+                s.append(aa1 * 10**n + b)
 
-print(s)
-print(sum(c for a, b, c in s))
+            aa2 = aa + sq_delta // 2
+            s.append(aa2 * 10**n + b)
+
+print(sum(s))
